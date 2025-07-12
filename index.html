@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html class="theme-dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul Rathee ✦ Software Developer</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="description"
+        content="Software Engineer passionate about building smart, efficient systems. Turning real-world challenges into high-performance solutions.">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Anshul Rathee">
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Anshul Rathee" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Anshul Rathee - Software Developer">
+    <meta property="og:title" content="Anshul Rathee - Software Developer">
+    <meta property="og:description"
+        content="Software Engineer passionate about building smart, efficient systems. Turning real-world challenges into high-performance solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anshulrathee.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anshul Rathee - Software Developer">
+    <meta name="twitter:description"
+        content="Software Engineer passionate about building smart, efficient systems. Turning real-world challenges into high-performance solutions.">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="preload prefetch" href="./fonts/Outfit-Regular.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload prefetch" href="./fonts/Outfit-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload prefetch" href="./fonts/Outfit-SemiBold.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload prefetch" href="./fonts/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload prefetch" href="./fonts/Outfit-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload prefetch" href="./fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+</head>
+<script>
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+
+        const progressBar = document.getElementById("scroll-progress-bar");
+        const progressText = document.getElementById("scroll-progress-text");
+
+        progressBar.style.height = `${scrollPercent}%`;
+        progressText.textContent = `${Math.round(scrollPercent)}%`;
+
+        if (scrollPercent >= 100) {
+            progressText.style.display = "none";
+        } else {
+            progressText.style.display = "block";
+        }
+    });
+</script>
+
+<body class="preloading">
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+        <span id="scroll-progress-text">0%</span>
+    </div>
+
+    <main class="site-main">
+        <header class="header">
+            <div class="header__wrapper container grid">
+                <div class="header__block header__block--left">
+                    <a href="/" class="header__logo" data-pointer="link" data-pointer-text="Reload">
+                        <div class="header__pinwheel"> <span class="header__pinwheel-svg svg-data"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <path
+                                        d="M7.4436 2.4046c-.0564-.3077.4728-.6084 1.5878-.902 1.115-.2938 2.0536-.4406 2.8158-.4406.3387 0 .494.056.4657.1678l-3.345 6.545c-.0282.084-.1058.126-.2329.126-.127 0-.1905-.042-.1905-.126L7.4436 2.4046Z">
+                                    </path>
+                                    <path
+                                        d="M9.5607 8.8237c-.0564 0-.1058-.056-.1482-.1678-.0423-.1119-.0212-.1818.0635-.2098l4.7847-2.727c.254-.112.628.1747 1.122.86.494.6853.9245 1.4265 1.2915 2.2236.367.7972.4657 1.1818.2964 1.1538L9.5607 8.8237Z">
+                                    </path>
+                                    <path
+                                        d="M8.7986 9.7467c0-.0559.0564-.1188.1693-.1888.113-.0699.1835-.0909.2117-.0629l4.0649 3.734c.1976.1679.0423.5944-.4658 1.2797a12.241 12.241 0 0 1-1.736 1.888c-.6493.5733-.988.7761-1.0162.6083l-1.228-7.2163v-.042Z">
+                                    </path>
+                                    <path
+                                        d="M5.75 14.6136c-.0283.0839-.1412.1258-.3388.1258-.367 0-.9245-.1468-1.6725-.4405-.748-.2937-1.4114-.6154-1.99-.965-.5788-.3496-.7975-.5524-.6564-.6083L7.6977 9.369l.0847-.042c.0846 0 .1623.035.2328.105.0706.0699.0918.1328.0635.1888L5.75 14.6136Z">
+                                    </path>
+                                    <path
+                                        d="M2.0662 7.9007c-.254-.056-.3811-.4755-.3811-1.2586 0-.7832.0917-1.6293.2752-2.5383s.3458-1.2937.487-1.1538L7.74 8.1524c.0565.056.0635.1399.0212.2518-.0424.1119-.0918.1538-.1482.1258l-5.5468-.6293Z">
+                                    </path>
+                                </svg> </span> </div>
+                        <div class="header__author"> <span class="header__name">Anshul Rathee</span> <span
+                                class="header__role">Software Developer</span> </div>
+                    </a>
+                </div>
+                <div class="header__block header__block--center">
+                    <div class="header__version"> <span>Folio <b>'25</b></span> </div>
+                </div>
+                <div class="header__block header__block--right"> <button class="header__colors" data-pointer="simple"
+                        title="Theme Switcher" aria-label="Theme Dark"> <span class="header__colors-picker svg-data">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 78">
+                                <g fill="#FFFFFF" fill-rule="nonzero">
+                                    <path
+                                        d="M2.5 26.9h18.1c.9 0 1.7-.7 1.9-1.6.7-3.4 2-6.5 3.9-9.3.5-.8.5-1.8-.2-2.5L13.3.7c-.8-.8-2.2-.8-2.9.1C5.1 7.5 1.6 15.7.5 24.7c-.1 1.2.8 2.2 2 2.2Z">
+                                    </path>
+                                    <path
+                                        d="M26.3 44.8c-1.9-2.8-3.2-5.9-3.9-9.3-.2-.9-.9-1.6-1.9-1.6h-18c-1.2 0-2.1 1-1.9 2.1 1.1 9 4.6 17.2 9.9 23.9.7.9 2.1 1 2.9.1l12.8-12.8c.6-.6.6-1.6.1-2.4Z">
+                                    </path>
+                                    <path
+                                        d="M42.9 55.9c-3.4-.7-6.5-2-9.3-3.9-.8-.5-1.8-.5-2.5.2L18.3 65.1c-.8.8-.8 2.2.1 2.9 6.7 5.3 14.9 8.8 23.9 9.9 1.1.1 2.1-.8 2.1-1.9V57.8c.1-.9-.6-1.7-1.5-1.9Z">
+                                    </path>
+                                    <path
+                                        d="M64.9 52.3c-.7-.7-1.7-.7-2.5-.2-2.8 1.9-5.9 3.2-9.3 3.9-.9.2-1.6.9-1.6 1.9V76c0 1.2 1 2.1 2.1 1.9 9-1.1 17.2-4.6 23.9-9.9.9-.7 1-2.1.1-2.9L64.9 52.3Z">
+                                    </path>
+                                    <path
+                                        d="M93.5 33.9H75.4c-.9 0-1.7.7-1.9 1.6-.7 3.4-2 6.5-3.9 9.3-.5.8-.5 1.8.2 2.5l12.8 12.8c.8.8 2.2.8 2.9-.1 5.3-6.7 8.8-14.9 9.9-23.9.2-1.2-.7-2.2-1.9-2.2Z">
+                                    </path>
+                                    <path
+                                        d="M73.5 25.3c.2.9.9 1.6 1.9 1.6h18.1c1.2 0 2.1-1 1.9-2.1-1.1-9-4.6-17.2-9.9-23.9-.7-.9-2.1-1-2.9-.1L69.9 13.5c-.7.7-.7 1.7-.2 2.5 1.8 2.7 3.2 5.9 3.8 9.3Z">
+                                    </path>
+                                    <path class="drop"
+                                        d="M60.9 30.5c0-5.7-7.6-18.7-9.9-22.6-.6-1.1-1.8-1.7-3-1.7s-2.4.6-3 1.7c-2.3 3.9-9.9 16.9-9.9 22.6 0 7.1 5.8 12.9 12.9 12.9 7.1 0 12.9-5.7 12.9-12.9ZM46.4 25c-.1.2-3.2 5.3-.9 8.7.3.5.4 1 .3 1.5-.1.5-.4 1-.9 1.3-.3.2-.7.4-1.1.4-.7 0-1.3-.3-1.7-.9-3.8-5.7.7-12.9.9-13.2.3-.5.8-.8 1.3-.9.5-.1 1.1 0 1.6.3.8.5 1.1 1.8.5 2.8Z">
+                                    </path>
+                                </g>
+                            </svg> </span> </button>
+                </div>
+            </div>
+        </header>
+        <section class="hero-header">
+            <canvas class="hero-header__canvas"></canvas>
+            <div class="hero-header__wrapper container grid">
+                <div class="hero-header__slogan"></div>
+                <div class="hero-header__bottom">
+                    <div class="hero-header__description" data-splitting>Hey! <span>I’m Anshul Rathee</span> <br> A
+                        Software Engineer passionate about building smart, efficient systems. <br>
+                        Turning real-world challenges into high-performance solutions.
+                    </div>
+                    <button class="hero-header__scroll" data-pointer="link" data-pointer-text="Scroll"
+                        title="Scroll Down" aria-label="Scroll Down">
+                        <span class="svg-data">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path fill="#000000" fill-rule="nonzero"
+                                    d="M8.5623 31.8141 22.021 45.2745c1.254 1.2496 3.2815 1.2496 4.5312 0L40.0125 31.814c1.2541-1.254 1.2541-3.2815 0-4.5312-1.254-1.2497-3.2815-1.2497-4.5312 0l-7.99 7.99V5.4156c0-1.7681-1.4357-3.2039-3.2039-3.2039s-3.204 1.4358-3.204 3.204v29.8527l-7.99-7.99a3.196 3.196 0 0 0-2.2666-.9395 3.2 3.2 0 0 0-2.2667.9395c-1.2541 1.254-1.2541 3.2815 0 4.5312l.0022.0045Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="about content-section">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="about__media">
+                        <img src="./images/pic.jpg" class="media__image" alt="Anshul Rathee - Software Developer"
+                            inferSize="true" width="600" height="750" loading="lazy" decoding="async">
+                    </div>
+                    <div class="content-section__head">
+                        <h2 class="about__title content-section__title scroll-js-title" data-splitting
+                            data-fx="perspective-opacity">Behind the Scenes</h2> <span
+                            class="about__decorative content-section__decorative scroll-js-title" data-splitting
+                            data-fx="scale-words">About</span>
+                    </div>
+                    <div class="about__wrapper content-section__wrapper">
+                        <div class="about__description content-section__description scroll-js-content" data-splitting
+                            data-fx="scroll-opacity" style="text-align: justify;">
+                            <p>I’m a Software Engineer with a strong foundation in Data Structures, Algorithms, and
+                                System Design, focused on building efficient and reliable software solutions. My
+                                expertise spans Machine Learning, Artificial Intelligence, and
+                                creating high-performance applications for real-world challenges.</p>
+                            <p>With proficiency in C++, Python, C#, databases like MySQL and MongoDB, and a keen eye for
+                                performance optimization, I specialize in building scalable, intelligent applications.
+                                Whether it’s refining AI models, crafting efficient algorithms, or enhancing system
+                                architecture, I thrive on solving complex problems with precision.</p>
+                            <p>In my free time, I work on personal projects, competitive programming,
+                                and refining my skills to stay ahead in the ever-evolving tech landscape.</p>
+                            <p>Currently working at <a href="https://www.i2vsys.com/" target="_blank"
+                                    rel="noopener noopener noreferrer nofollow" data-pointer="link"
+                                    data-pointer-text="Visit">i2V Systems Limited</a>, Gurugram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="content-section__wrapper">
+                        <h2 class="achievements__title scroll-js-title" data-splitting data-fx="overflow-horizontal">
+                            Achievements</h2>
+                        <div class="achievements__lists">
+                            <ul class="lists lists--normal scroll-js-list" data-fx="opacity">
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box"> <span class="list__item-number">1x</span> <span
+                                            class="list__item-name">First Prize in DSA Round at GBU, Greater
+                                            Noida</span> </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box"> <span class="list__item-number">1x</span> <span
+                                            class="list__item-name">In Top 10 Coders of LIET, Greater Noida</span>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box"> <span class="list__item-number">2x</span> <span
+                                            class="list__item-name">College Topper in 5th and 7th Semester University
+                                            Exams</span> </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box"> <span class="list__item-number">1x</span> <span
+                                            class="list__item-name">Student Convenor, HexClan Coding Club at LIET,
+                                            Greater Noida</span> 
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box"> <span class="list__item-number">2x</span> <span
+                                            class="list__item-name">First Prize in Mathematics Competetion at LIET,
+                                            Greater Noida</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="tech-stack__wrapper content-section__wrapper">
+                        <h2 class="tech-stack__title scroll-js-title" data-splitting data-fx="overflow-horizontal">
+                            Tech Stack & Tools</h2>
+                        <div class="tech-stack__lists">
+                            <ul class="lists lists--linkables scroll-js-list" data-fx="opacity">
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">Programming Languages</p>
+                                        <h3 class="list__item-name">C/C++, Python, C#, HTML5, CSS3, JS, XAML</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">Frameworks & Technologies</p>
+                                        <h3 class="list__item-name">Avolonia, Windows Presentation Foundation (WPF),
+                                            OpenCV,
+                                            Keras, TensorFlow, MatplotLib, Seaborn</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">Databases</p>
+                                        <h3 class="list__item-name">MySQL, MongoDB, HeidiSQL, DBeaver</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">Development Tools & Platforms</p>
+                                        <h3 class="list__item-name">Git, GitHub, Visual Studio, JetBrains Rider, Figma, Google Colab,
+                                            Jupyter, VS Code</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lab content-section">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="content-section__head">
+                        <h2 class="lab__title content-section__title scroll-js-title" data-splitting
+                            data-fx="perspective-opacity">Experience</h2> <span
+                            class="lab__decorative content-section__decorative scroll-js-title" data-splitting
+                            data-fx="scale-words">Industry</span>
+                    </div>
+                    <div class="tech-stack__wrapper content-section__wrapper">
+                        <h2 class="company__title scroll-js-title" data-splitting data-fx="overflow-horizontal">
+                            Software Developer <br>
+                            <a href="https://www.i2vsys.com/" target="_blank"
+                                rel="noopener noopener noreferrer nofollow" data-pointer="link"
+                                data-pointer-text="Visit">i2V Systems Limited, Gurugram</a>
+                        </h2>
+                        <p class="list__item-headline timeline">Sept, 24 - Present</p>
+                        <div class="tech-stack__lists">
+                            <ul class="lists lists--linkables scroll-js-list" data-fx="opacity">
+                                <p class="list__item-exp">At i2V Systems, I’ve primarily worked on building efficient
+                                    user interfaces,
+                                    integrating intelligent models, and contributing across both frontend and backend
+                                    layers.</p>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <h3 class="list__item-name past-work">Designed and implemented a complete dark
+                                            theme for the application, improving user experience and accessibility
+                                            across modules.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">Integrated AI-based features including:</p>
+                                        <h3 class="list__item-name past-work">Face Recognition and ANPR (Automatic
+                                            Number Plate Recognition) models for real-time camera event reporting on
+                                            hourly and daily bases.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <h3 class="list__item-name past-work">Resolved real-time production bugs
+                                            reported from live sites, ensuring system stability and continuous
+                                            performance under scale.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <p class="list__item-headline">UI feature development using Avalonia (Linux -
+                                            Ubuntu):</p>
+                                        <h3 class="list__item-name past-work">Developed advanced controls for PTZ
+                                            (Pan-Tilt-Zoom) cameras including movement, zoom in/out, and positioning.
+                                        </h3>
+                                        <h3 class="list__item-name past-work">Built UI components for managing NAS
+                                            drives — allowing users to add, delete, or view fixed system drives through
+                                            REST API integration.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <h3 class="list__item-name past-work">Previously worked extensively on WPF
+                                            (Windows Presentation Foundation), creating responsive and themeable
+                                            interfaces.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <h3 class="list__item-name past-work">Gained hands-on experience with version
+                                            control (Git/GitHub), improving collaboration and codebase management.</h3>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--no-link">
+                                    <div class="list__item-box">
+                                        <h3 class="list__item-name past-work">Worked with databases using HeidiSQL and
+                                            DBeaver, for handling data operations and backend validation.</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works content-section">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="content-section__head">
+                        <h2 class="works__title content-section__title scroll-js-title" data-splitting
+                            data-fx="perspective-opacity">Personal Projects</h2>
+                        <p class="works__dates content-section__dates scroll-js-content" data-splitting
+                            data-fx="overflow-horizontal">2021 - 2025</p> <span
+                            class="works__decorative content-section__decorative scroll-js-title" data-splitting
+                            data-fx="scale-words">Work</span>
+                    </div>
+                    <div class="works__lists">
+                        <div class="work__item work__item--0">
+                            <div class="work__item-box">
+                                <a href="https://www.linkedin.com/posts/kamleshbaheti036_touchlesstech-humancomputerinteraction-gesturecontrol-activity-7346875378755346432-BbL-"
+                                    class="work__item-link" title="Touchless Tech" target="_blank"
+                                    rel="noopener noreferrer nofollow" data-pointer="link" data-pointer-text="Launch">
+                                    <div class="work__item-data">
+                                        <h3 class="work__item-title scroll-project-title" data-splitting>Touchless Tech
+                                        </h3>
+                                        <span class="work__item-deco">01</span>
+                                    </div>
+                                    <div class="work__item-info"> <span class="work__item-number">01</span>
+                                        <span class="work__item-attrs">Python • NLP • Speech Recognition • HTML/CSS •
+                                            JavaScript
+                                        </span>
+                                        <span class="work__item-agency">Collaborative Project</span>
+                                        <span class="work__item-arrow svg-data">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                <path fill="#FFFFFF" fill-rule="evenodd"
+                                                    d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="work__item-media"> <img src="./images/touchless-tech.jpg"
+                                            class="media__image" alt="Touchless Tech" width="2072" height="1237"
+                                            loading="lazy" decoding="async">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__item work__item--1">
+                            <div class="work__item-box">
+                                <a href="https://github.com/AnshulRathee/Handwritten-Digit-Recognition-using-MNIST"
+                                    class="work__item-link" title="HWDR" target="_blank"
+                                    rel="noopener noreferrer nofollow" data-pointer="link" data-pointer-text="Launch">
+                                    <div class="work__item-data">
+                                        <h3 class="work__item-title scroll-project-title" data-splitting>Hand-Written
+                                            Digit <br> Recognition</h3>
+                                        <span class="work__item-deco">02</span>
+                                    </div>
+                                    <div class="work__item-info"> <span class="work__item-number">02</span> <span
+                                            class="work__item-attrs">Python • MNIST</span> <span
+                                            class="work__item-agency">Personal Project</span> <span
+                                            class="work__item-arrow svg-data"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 28 28">
+                                                <path fill="#FFFFFF" fill-rule="evenodd"
+                                                    d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                </path>
+                                            </svg> </span> </div>
+                                    <div class="work__item-media"> <img src="./images/hwdr.jpg" class="media__image"
+                                            alt="HWDR" width="2072" height="1237" loading="lazy" decoding="async">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__item work__item--2">
+                            <div class="work__item-box"> <a
+                                    href="https://github.com/AnshulRathee/Autism-Detection-Model-for-Early-Childhood-Screening"
+                                    class="work__item-link" title="Autism Detection" target="_blank"
+                                    rel="noopener noreferrer nofollow" data-pointer="link" data-pointer-text="Launch">
+                                    <div class="work__item-data">
+                                        <h3 class="work__item-title scroll-project-title" data-splitting>Autism
+                                            Detection <br> for Early Childhood Screening</h3>
+                                        <span class="work__item-deco">03</span>
+                                    </div>
+                                    <div class="work__item-info"> <span class="work__item-number">03</span> <span
+                                            class="work__item-attrs">Python • Machine Learning • SVM </span> <span
+                                            class="work__item-agency">Collaborative Project</span> <span
+                                            class="work__item-arrow svg-data"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 28 28">
+                                                <path fill="#FFFFFF" fill-rule="evenodd"
+                                                    d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                </path>
+                                            </svg> </span> </div>
+                                    <div class="work__item-media"> <img src="./images/autism.jpg" class="media__image"
+                                            alt="Autism Model" width="2072" height="1237" loading="lazy"
+                                            decoding="async"> </div>
+                                </a> </div>
+                        </div>
+                        <div class="work__item work__item--3">
+                            <div class="work__item-box"> <a
+                                    href="https://github.com/AnshulRathee/Glitch---The-Assistant"
+                                    class="work__item-link" title="Glitch" target="_blank"
+                                    rel="noopener noreferrer nofollow" data-pointer="link" data-pointer-text="Launch">
+                                    <div class="work__item-data">
+                                        <h3 class="work__item-title scroll-project-title" data-splitting>Glitch - The
+                                            Assistant
+                                        </h3> <span class="work__item-deco">04</span>
+                                    </div>
+                                    <div class="work__item-info"> <span class="work__item-number">04</span> <span
+                                            class="work__item-attrs">C++ • eSpeak • System Recognition Commands</span>
+                                        <span class="work__item-agency">Personal Project</span> <span
+                                            class="work__item-arrow svg-data"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 28 28">
+                                                <path fill="#FFFFFF" fill-rule="evenodd"
+                                                    d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                </path>
+                                            </svg> </span>
+                                    </div>
+                                    <div class="work__item-media"> <img src="./images/glitch.jpg" class="media__image"
+                                            alt="glitch" width="2072" height="1237" loading="lazy" decoding="async">
+                                    </div>
+                                </a> </div>
+                        </div>
+                        <div class="work__item work__item--4">
+                            <div class="work__item-box"> <a
+                                    href="http://github.com/AnshulRathee/Contact-Management-System"
+                                    class="work__item-link" title="CMS" target="_blank"
+                                    rel="noopener noreferrer nofollow" data-pointer="link" data-pointer-text="Launch">
+                                    <div class="work__item-data">
+                                        <h3 class="work__item-title scroll-project-title" data-splitting>Contact
+                                            Management</h3> <span class="work__item-deco">05</span>
+                                    </div>
+                                    <div class="work__item-info"> <span class="work__item-number">05</span> <span
+                                            class="work__item-attrs">C++ • File-Handling </span> <span
+                                            class="work__item-agency">Personal Project</span> <span
+                                            class="work__item-arrow svg-data"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 28 28">
+                                                <path fill="#FFFFFF" fill-rule="evenodd"
+                                                    d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                </path>
+                                            </svg> </span> </div>
+                                    <div class="work__item-media"> <img src="./images/cms.jpg" class="media__image"
+                                            alt="cms" width="2072" height="1237" loading="lazy" decoding="async"> </div>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lab content-section">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="content-section__head">
+                        <h2 class="lab__title content-section__title scroll-js-title" data-splitting
+                            data-fx="perspective-opacity">Code - Arena</h2> <span
+                            class="lab__decorative content-section__decorative scroll-js-title" data-splitting
+                            data-fx="scale-words">Profiles</span>
+                    </div>
+                    <div class="lab__wrapper content-section__wrapper">
+                        <div class="lab__lists">
+                            <ul class="lists lists--linkables scroll-js-list" data-fx="opacity">
+                                <li class="list__item list__item--with-link">
+                                    <div class="list__item-box">
+                                        <a href="https://leetcode.com/u/Anshul_Rathee/"
+                                            class="list__item-link list__item-link--flex" target="_blank"
+                                            data-pointer="link" data-pointer-text="Check Out">
+                                            <div class="list__item-media"> <img src="./images/lc-logo.jpg"
+                                                    class="media__image" alt="LeetCode-Profile" width="192" height="192"
+                                                    loading="lazy" decoding="async"> </div>
+                                            <div class="list__item-data">
+                                                <h3 class="list__item-name list__item-js">LeetCode</h3>
+                                                <p class="list__item-description list__item-js">Ranked in the top
+                                                    <span>21%</span> with the contest rating
+                                                    of <span>1609</span> and solved <span>850+</span> problems.
+                                                </p>
+                                            </div> <span class="list__item-arrow svg-data"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path fill="#FFFFFF" fill-rule="evenodd"
+                                                        d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                    </path>
+                                                </svg> </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--with-link">
+                                    <div class="list__item-box"> <a href="https://www.codechef.com/users/anshul_rathee/"
+                                            class="list__item-link list__item-link--flex" title="CodeChef"
+                                            target="_blank" rel="noopener noreferrer nofollow" data-pointer="link"
+                                            data-pointer-text="Check Out">
+                                            <div class="list__item-media"> <img src="./images/cc-logo.svg"
+                                                    class="media__image" alt="CodeChef-Profile" width="192" height="192"
+                                                    loading="lazy" decoding="async"> </div>
+                                            <div class="list__item-data">
+                                                <h3 class="list__item-name list__item-js">CodeChef</h3>
+                                                <p class="list__item-description list__item-js">A competitive coder on
+                                                    CodeChef, ranked <span>1414</span> in global contests.</p>
+                                            </div> <span class="list__item-arrow svg-data"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path fill="#FFFFFF" fill-rule="evenodd"
+                                                        d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                    </path>
+                                                </svg> </span>
+                                        </a> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lab content-section">
+            <div class="container grid">
+                <div class="grid__col--full">
+                    <div class="content-section__head">
+                        <h2 class="lab__title content-section__title scroll-js-title" data-splitting
+                            data-fx="perspective-opacity">Education</h2> <span
+                            class="lab__decorative content-section__decorative scroll-js-title" data-splitting
+                            data-fx="scale-words">Learning</span>
+                    </div>
+                    <div class="lab__wrapper content-section__wrapper">
+                        <div class="lab__lists">
+                            <ul class="lists lists--linkables scroll-js-list" data-fx="opacity">
+                                <li class="list__item list__item--with-link">
+                                    <div class="list__item-box">
+                                        <a href="https://liet.in/" class="list__item-link list__item-link--flex"
+                                            target="_blank" data-pointer="link" data-pointer-text="Explore">
+                                            <div class="list__item-media"> <img src="./images/liet-logo.jpg"
+                                                    class="media__image" alt="GSAP Fake Preloader" width="192"
+                                                    height="192" loading="lazy" decoding="async"> </div>
+                                            <div class="list__item-data">
+                                                <h3 class="list__item-name list__item-js">Bachelor of Technology in
+                                                    Computer Science and Engineering</h3>
+                                                <p class="list__item-description list__item-js">
+                                                    Lloyd Institute of Engineering and Technology, Greater Noida
+                                                </p>
+                                                <p class="list__item-description list__item-js">
+                                                    CGPA : 8.30
+                                                </p>
+                                            </div> <span class="list__item-arrow svg-data"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path fill="#FFFFFF" fill-rule="evenodd"
+                                                        d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                    </path>
+                                                </svg> </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--with-link">
+                                    <div class="list__item-box">
+                                        <a href="https://newkrishnapublicschool.com/"
+                                            class="list__item-link list__item-link--flex" target="_blank"
+                                            data-pointer="link" data-pointer-text="Explore">
+                                            <div class="list__item-media"> <img src="./images/12th-logo.jpg"
+                                                    class="media__image" alt="GSAP Fake Preloader" width="512"
+                                                    height="512" loading="lazy" decoding="async"> </div>
+                                            <div class="list__item-data">
+                                                <h3 class="list__item-name list__item-js">Intermediate</h3>
+                                                <p class="list__item-description list__item-js">
+                                                    Central Board of Secondary Education, New Delhi
+                                                </p>
+                                                <p class="list__item-description list__item-js">
+                                                    81%
+                                                </p>
+                                            </div> <span class="list__item-arrow svg-data"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path fill="#FFFFFF" fill-rule="evenodd"
+                                                        d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                    </path>
+                                                </svg> </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--with-link">
+                                    <div class="list__item-box">
+                                        <a href="https://www.dcconventschool.in/"
+                                            class="list__item-link list__item-link--flex" target="_blank"
+                                            data-pointer="link" data-pointer-text="Explore">
+                                            <div class="list__item-media"> <img src="./images/10th-logo.jpg"
+                                                    class="media__image" alt="GSAP Fake Preloader" width="192"
+                                                    height="192" loading="lazy" decoding="async"> </div>
+                                            <div class="list__item-data">
+                                                <h3 class="list__item-name list__item-js">Matriculation</h3>
+                                                <p class="list__item-description list__item-js">
+                                                    Central Board of Secondary Education, New Delhi
+                                                </p>
+                                                <p class="list__item-description list__item-js">
+                                                    88.89%
+                                                </p>
+                                            </div> <span class="list__item-arrow svg-data"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path fill="#FFFFFF" fill-rule="evenodd"
+                                                        d="M14 0C6.273 0 0 6.273 0 14s6.273 14 14 14 14-6.273 14-14S21.727 0 14 0Zm3.586 13H8c-.552 0-1 .448-1 1s.448 1 1 1h9.586l-2.293 2.293c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0l4-4c.391-.39.391-1.024 0-1.414l-4-4c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414L17.586 13Z">
+                                                    </path>
+                                                </svg> </span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact content-section">
+            <div class="container grid">
+                <div class="grid__col--full"> <a class="contact__link" target="_blank"
+                        href="mailto:ansheee2003@gmail.com?subject=Hello&body=Hope this mail finds you well!"
+                        title="Contact Me" data-pointer="link" data-pointer-text="Say Hi! 🤗">
+                        <h2 class="contact__title">Let's Talk</h2>
+                    </a> </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrapper container grid">
+                <div class="footer__block footer__block--left">
+                    <ul class="footer__socials">
+                        <li class="social__item"> <a href="https://www.linkedin.com/in/anshulrathee/"
+                                title="Follow Me on LinkedIn" target="_blank" rel="noopener noreferrer nofollow"
+                                data-pointer="simple"> <span>LinkedIn</span> </a> </li>
+                        <li class="social__item"> <a href="https://github.com/AnshulRathee" title="Follow Me on GitHub"
+                                target="_blank" rel="noopener noreferrer nofollow" data-pointer="simple">
+                                <span>GitHub</span> </a> </li>
+                    </ul>
+                </div>
+                <div class="footer__block footer__block--right">
+                    <p class="footer__copyrights">&copy; 2025 - Anshul Rathee <br>
+                        Designed by <a href="https://kamleshbaheti.github.io/Portfolio/" target="_blank"
+                            style="color: #46cd4b;">Kratak
+                            <dotlottie-player src="./images/passion.lottie" background="transparent" speed="1"
+                                style="width: 1.8em; height: 2em; display: inline-block; vertical-align: middle; margin-top: -0.4em;"
+                                loop autoplay>
+                            </dotlottie-player></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="preloader">
+        <div class="preloader__wrapper">
+            <div class="preloader__counter">
+                <div class="preloader__mask">
+                    <div class="preloader__number preloader__number--hundred">0 1 2 3 4 5 6 7 8 9</div>
+                </div>
+                <div class="preloader__mask">
+                    <div class="preloader__number preloader__number--decimal">0 1 2 3 4 5 6 7 8 9 0</div>
+                </div>
+                <div class="preloader__mask">
+                    <div class="preloader__number preloader__number--unit">0 1 2 3 4 5 6 7 8 9 0</div>
+                </div>
+            </div>
+            <div class="preloader__labels"> <span class="preloader__label">loading...</span> </div>
+            <div class="preloader__pinwheel"> <span class="svg-data"> <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M7.4436 2.4046c-.0564-.3077.4728-.6084 1.5878-.902 1.115-.2938 2.0536-.4406 2.8158-.4406.3387 0 .494.056.4657.1678l-3.345 6.545c-.0282.084-.1058.126-.2329.126-.127 0-.1905-.042-.1905-.126L7.4436 2.4046Z">
+                        </path>
+                        <path
+                            d="M9.5607 8.8237c-.0564 0-.1058-.056-.1482-.1678-.0423-.1119-.0212-.1818.0635-.2098l4.7847-2.727c.254-.112.628.1747 1.122.86.494.6853.9245 1.4265 1.2915 2.2236.367.7972.4657 1.1818.2964 1.1538L9.5607 8.8237Z">
+                        </path>
+                        <path
+                            d="M8.7986 9.7467c0-.0559.0564-.1188.1693-.1888.113-.0699.1835-.0909.2117-.0629l4.0649 3.734c.1976.1679.0423.5944-.4658 1.2797a12.241 12.241 0 0 1-1.736 1.888c-.6493.5733-.988.7761-1.0162.6083l-1.228-7.2163v-.042Z">
+                        </path>
+                        <path
+                            d="M5.75 14.6136c-.0283.0839-.1412.1258-.3388.1258-.367 0-.9245-.1468-1.6725-.4405-.748-.2937-1.4114-.6154-1.99-.965-.5788-.3496-.7975-.5524-.6564-.6083L7.6977 9.369l.0847-.042c.0846 0 .1623.035.2328.105.0706.0699.0918.1328.0635.1888L5.75 14.6136Z">
+                        </path>
+                        <path
+                            d="M2.0662 7.9007c-.254-.056-.3811-.4755-.3811-1.2586 0-.7832.0917-1.6293.2752-2.5383s.3458-1.2937.487-1.1538L7.74 8.1524c.0565.056.0635.1399.0212.2518-.0424.1119-.0918.1538-.1482.1258l-5.5468-.6293Z">
+                        </path>
+                    </svg> </span> </div>
+        </div>
+    </div>
+    <div class="cursor">
+        <div class="cursor__circle cursor__circle--small"> <span class="cursor__text"></span> </div>
+        <div class="cursor__circle cursor__circle--large"></div>
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>
