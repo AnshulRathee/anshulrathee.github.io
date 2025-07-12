@@ -1278,18 +1278,42 @@ body.preloading {
     transition: fill .2s ease-in-out
 }
 
-.header__version span {
+.header__version a {
     letter-spacing: .125rem
 }
 
-.header__version b {
+.header__version {
+    font-weight: 500;
     color: var(--col-accent);
-    font-weight: 500
+}
+
+.header__version a {
+    color: var(--col-text);
+    position: relative
+}
+
+.header__version a:after {
+    background-color: var(--col-accent);
+    bottom: -0.1rem;
+    content: "";
+    height: .125rem;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .4s var(--ease-in-out-cubic);
+    width: 100%;
+    z-index: 0
 }
 
 @media (min-width:1025px) and (hover:hover) and (pointer:fine) {
     .header__colors:hover path:not(.drop) {
         fill: var(--col-accent)
+    }
+
+    .header__version a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left
     }
 }
 
